@@ -19,7 +19,7 @@ for line in lines:
 
     baseWord = line
     line = line.capitalize()
-    line = line.rstrip()
+    line = line.strip()
     ending = random.choice(endings)
     line = line + ending
     postString = "Allagan Tomestone of " + line
