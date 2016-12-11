@@ -10,8 +10,6 @@ auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 
 api = tweepy.API(auth)
 
-numEndings = 7
-
 with open('corncobProgress.txt', 'r') as wordlist:
     lines = wordlist.readlines()
     wordlist.close()
