@@ -1,2 +1,2 @@
 endings = ["ery", "ry", "ics", "ure", "ology", "osity", "ion", "acity", "ing", "ness",
-           "iness", "tion", "ction", "itude", "iveness", ""]
+           "iness", "tion", "ction", "itude", "iveness", "s", ""]
