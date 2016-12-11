@@ -9,10 +9,11 @@ auth = tweepy.OAuthHandler(CONSUMER_TOKEN, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 
 api = tweepy.API(auth)
+wordlist = 'filename.txt'
 
-with open('corncobProgress.txt', 'r') as wordlist:
-    lines = wordlist.readlines()
-    wordlist.close()
+with open(wordlist, 'r') as words:
+    lines = words.readlines()
+    words.close()
 
 for line in lines:
 
