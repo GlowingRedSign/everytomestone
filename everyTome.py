@@ -30,7 +30,7 @@ for line in lines:
         strending = line[endingLength:]
         if choice == strending:
             matched = 1
-    if matched == 0 or line[-1:] == 's':
+    if matched == 0:
         ending = random.choice(endings)
         line = line + ending
     
