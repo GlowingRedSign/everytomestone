@@ -9,7 +9,8 @@ auth = tweepy.OAuthHandler(CONSUMER_TOKEN, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 
 api = tweepy.API(auth)
-wordlist = 'filename.txt'
+
+wordlist = "corncobProgress.txt"
 
 with open(wordlist, 'r') as words:
     lines = words.readlines()
@@ -17,14 +18,24 @@ with open(wordlist, 'r') as words:
 
 for line in lines:
 
-    baseWord = line
     line = line.capitalize()
     line = line.strip()
-    ending = random.choice(endings)
-    line = line + ending
+    baseWord = line
+    
+    
+    matched = 0
+    for choice in endings:
+        endingLength = len(choice)
+        endingLength = endingLength * -1
+        strending = line[endingLength:]
+        if choice == strending:
+            matched = 1
+    if matched == 0 or line[-1:] == 's':
+        ending = random.choice(endings)
+        line = line + ending
+    
     postString = "Allagan Tomestone of " + line
     api.update_status(postString)
     print baseWord
-        
     time.sleep(900)
     
