@@ -10,7 +10,7 @@ auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 
 api = tweepy.API(auth)
 
-wordlist = "corncobProgress.txt"
+wordlist = "mergedProgress.txt"
 
 with open(wordlist, 'r') as words:
     lines = words.readlines()
@@ -34,8 +34,12 @@ for line in lines:
         ending = random.choice(endings)
         line = line + ending
     
-    postString = "Allagan Tomestone of " + line
-    api.update_status(postString)
-    print baseWord
+    try:
+        postString = "Allagan Tomestone of " + line
+        api.update_status(postString)
+        print baseWord
+    except:
+        continue
+    
     time.sleep(900)
     
