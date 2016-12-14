@@ -36,7 +36,7 @@ auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 
 api = tweepy.API(auth)
 
-wordlist = "/home/ec2-user/everyTome/mergedProgressOneWord.txt"
+wordlist = "filename.txt"
 with open(wordlist, 'r') as words:
     contents = words.readlines()
     baseWord = contents[0]
