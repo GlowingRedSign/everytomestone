@@ -14,4 +14,4 @@ python everyTome.py
 
 One execution of the script will post one word and remove it from the wordlist file.
 
-You can use a crontab task to run the script with the desired frequency.
+You can use a crontab task to automatically run the script with the desired frequency.
