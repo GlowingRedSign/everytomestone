@@ -1,7 +1,7 @@
 # everytomestone
 A twitter bot that posts "Allagan Tomestone of [word]" for every word in some list.
 
-Requires Python 2.x.
+Requires Python 2.x and the Tweepy library. Install Tweepy from: https://github.com/tweepy/tweepy
 
 <h3>Deployment</h3>
 Set up a Twitter app and obtain a consumer token, consumer secret, access token, and access token secret for that app. Enter these values in secret.py as the string values for the appropriate variables.
