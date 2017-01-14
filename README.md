@@ -5,7 +5,7 @@ Requires Python 2.x and the Tweepy library. Install Tweepy from: https://github.
 
 <h3>Deployment</h3>
 Set up a Twitter app and obtain a consumer token, consumer secret, access token, and access token secret for that app. Enter these values in secret.py as the string values for the appropriate variables.
-Change the value of "wordlist" to the filename of the word list file you will use. Make sure that the file is read/write accessible. EveryTome will delete words from the file as it uses them, so be sure it is not your only available copy of the list.
+Change the value of "wordlist" to the filepath of the word list file you will use. Make sure that the file is read/write accessible. EveryTome will delete words from the file as it uses them, so be sure to back up your wordlist with a different filename.
 
 Make sure that the shebang line at the top of everyTome.py matches the location of your python installation.
 
