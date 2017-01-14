@@ -68,8 +68,13 @@ auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 api = tweepy.API(auth)
 
 
-#Open the wordlist file and read its contents as a list of strings
-wordlist = ""
+'''Change the value of wordlist to the filename of the wordlist
+you want to use'''
+wordlist = "XXXX"
+
+'''Open the wordlist and read its
+contents as a list of strings, with
+each string as one line.'''
 with open(wordlist, 'r') as words:
     contents = words.readlines()
     baseWord = contents[0]
